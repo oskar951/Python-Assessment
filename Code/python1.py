@@ -298,14 +298,24 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-	word = inputString
-	letter = char
+ word = inputString
+ letter = char
 
-	word = word.replace(" ","")
+ word = word.replace(" ","")
 
-	result = word.find(letter) + 1
+ result = word.find(letter)
+
+ if result > 0:
+  return result + 1
+  
+ else:
+  return result
 	
-	return result
+	
+ 
+
+
+
 
 
 
